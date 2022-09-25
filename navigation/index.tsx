@@ -58,7 +58,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator initialRouteName="WhoIsWatchingScreen">
+    <Stack.Navigator initialRouteName="GetStartedScreen">
       <Stack.Screen
         name="GetStartedScreen"
         component={GetStartedScreen}
