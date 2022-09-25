@@ -46,17 +46,18 @@ const UserCard = (props: any) => {
   return (
     <View style={styles.container}>
       {!image && (
-        <ImageBackground style={styles.img} source={{ uri: img }}>
-          <Pressable onPress={PickImage}>
+        
+          <Pressable onPress={() => navigation.navigate("Root")}>
+            <Image style={styles.img} source={{ uri: img }}/>
             <AntDesign
               onPress={PickImage}
-              style={{ position: "absolute", bottom: 50, left: 40 }}
+              style={{ position: "absolute", top:8, right: -3 }}
               name="edit"
               size={20}
               color="lightgrey"
             />
           </Pressable>
-        </ImageBackground>
+        
       )}
       {image && (
         <Pressable onPress={() => navigation.navigate("Root")}>
