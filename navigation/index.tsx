@@ -159,7 +159,8 @@ function BottomTabNavigator() {
         name="Search"
         component={SearchScreen}
         options={{
-          headerShown: false,
+          headerTitle:'',
+          headerStyle:{backgroundColor:'black'},
           tabBarLabelStyle: { paddingVertical: 5 },
           tabBarIcon: ({ color }) => (
             <Ionicons name="search" size={24} color={color}/>
