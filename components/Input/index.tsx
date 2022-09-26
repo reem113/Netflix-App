@@ -9,10 +9,12 @@ interface InputProps {
   error: string;
   onChangeText: () => {};
   secureTextEntry: any;
+  keyboard:any;
+  contentText:any
 }
 
 const Input = (props: InputProps) => {
-  const { placeholder, value, error, onChangeText, secureTextEntry } = props;
+  const { placeholder, value, error, onChangeText, secureTextEntry, keyboard,contentText } = props;
   return (
     <View style={styles.container}>
       <TextInput
@@ -22,6 +24,8 @@ const Input = (props: InputProps) => {
         onChangeText={onChangeText}
         secureTextEntry={secureTextEntry}
         style={styles.input}
+        keyboardType={keyboard}
+        textContentType={contentText}
       />
       <Text style={styles.error}>{error}</Text>
     </View>

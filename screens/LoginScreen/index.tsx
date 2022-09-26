@@ -37,6 +37,8 @@ const LoginScreen = (props: any) => {
             value={values.email}
             error={touched.email && errors.email}
             onChangeText={handleChange("email")}
+            keyboard={"email-address"}
+            contentText={"emailAddress"}
           />
 
           <Input
@@ -45,6 +47,8 @@ const LoginScreen = (props: any) => {
             error={touched.password && errors.password}
             onChangeText={handleChange("password")}
             secureTextEntry
+            keyboard={"numbers-and-punctuation"}
+            contentText={"password"}
           />
 
           <Button btnText={"Sign In"} onPress={handleSubmit} />

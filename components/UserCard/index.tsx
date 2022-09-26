@@ -53,7 +53,7 @@ const UserCard = (props: any) => {
               onPress={PickImage}
               style={{ position: "absolute", top:8, right: -3 }}
               name="edit"
-              size={20}
+              size={24}
               color="lightgrey"
             />
           </Pressable>
@@ -66,7 +66,7 @@ const UserCard = (props: any) => {
             onPress={PickImage}
             style={{ position: "absolute", top: 5, right: -3 }}
             name="edit"
-            size={20}
+            size={24}
             color="lightgrey"
           />
         </Pressable>

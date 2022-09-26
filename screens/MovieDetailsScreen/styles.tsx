@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   picker: {
     backgroundColor: "#272626",
     color: "lightgrey",
-    padding: 8,
+    padding: 7,
     width: "30%",
     borderRadius: 4,
     borderColor: "#272626",
